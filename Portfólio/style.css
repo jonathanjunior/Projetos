@@ -245,7 +245,7 @@ header{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(6, 6rem);
-    row-gap: .5rem;
+    row-gap: .5rem;    
 }
 
 .conhecimento:nth-child(1){
@@ -331,7 +331,7 @@ header{
 .projetos{
     display: flex;
     justify-content: space-evenly;
-
+    height: 100vh;
 }
 
 .card{
