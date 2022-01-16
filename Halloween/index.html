@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween | Parallax Effects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="imagens/bg.jpg" id="bg"/>
+        <img src="imagens/bats.png" id="bats"/>
+        <img src="imagens/castle.png" id="castle"/>
+        <img src="imagens/img.png" id="img"/>
+        <img src="imagens/wolf.png" id="wolf"/>
+    </section>
+    <div class="sec">
+        <div class="content">
+            <h2>Happy Halloween</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur voluptate maxime laborum blanditiis iste libero. Veritatis eum repellendus accusamus excepturi id iusto corrupti nostrum quasi inventore voluptates vero dolores, sapiente maiores in neque, saepe fuga blanditiis rem suscipit ipsum voluptatem quo atque minus accusantium. Temporibus aperiam eveniet harum molestiae molestias tempora distinctio! Recusandae ex incidunt ipsam placeat consequuntur earum dolorum non impedit dolores hic officia, delectus nemo nobis ut soluta vitae nisi sapiente? Fugit atque rem unde nemo ratione, quis, magnam ad molestiae, provident sunt hic. Itaque non dicta placeat culpa assumenda, fugit quaerat expedita accusantium repudiandae ipsum nulla quis vitae reprehenderit deserunt ad, dolorum explicabo, quia maxime architecto veritatis tempore soluta. Molestiae vero veniam quia saepe voluptatem dicta suscipit explicabo nemo commodi accusantium temporibus aspernatur quaerat, at laborum soluta beatae possimus amet sint, impedit dolores? Suscipit eligendi dolore adipisci vero officia quasi nemo saepe debitis error veniam iste, alias itaque tenetur. Est libero similique, omnis ad perspiciatis nostrum exercitationem porro velit vel? Mollitia perspiciatis corporis obcaecati libero suscipit nostrum odio non provident nesciunt et aliquid, dignissimos voluptatum, autem corrupti doloribus animi. Provident pariatur ullam praesentium illo quidem minus reiciendis vitae itaque sit ea? Doloremque rerum consequuntur, quasi tempora non harum at alias ullam, sequi excepturi sunt blanditiis. Tempora sit cum aspernatur commodi numquam porro sint. Laboriosam accusantium dolorem, illum, aut sit tempore earum voluptas et nemo modi deleniti a quae quisquam ullam quas ipsum culpa, atque magnam. Inventore ipsum ducimus vitae sed ipsa quaerat dolorem. Laborum, debitis reiciendis! Iusto maxime cupiditate facere rerum iure nostrum perspiciatis laudantium aperiam. Dolores tempora ipsam, quis harum quasi officia expedita blanditiis sequi obcaecati minima! Sit, odio numquam. Est ipsam laboriosam doloremque id. Quidem quisquam doloribus et autem, at eius explicabo facilis. Ipsum soluta officia officiis asperiores facilis dolore repudiandae? Repellendus, magni hic!</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.to("#img",{
+            scrollTrigger : {
+                scrub: 0.5,
+            },
+            x : 1500,
+            y : 500,
+        })
+
+        gsap.from("#wolf",{
+            scrollTrigger : {
+                scrub: 0.5,
+            },
+            x : 400,            
+        })
+
+        gsap.from("#castle",{
+            scrollTrigger : {
+                scrub: 0.5,
+            },
+            x : -100,            
+        })
+
+        gsap.to("#bats",{
+            scrollTrigger : {
+                scrub: 0.5,
+            },
+            scale : 1.5,            
+        })
+
+    </script>
+</body>
+</html>
