@@ -248,14 +248,6 @@ header{
     row-gap: .5rem;    
 }
 
-@media only screen and (max-width:950px) {
-    .conhecimentos {
-        display: flex;
-        flex-direction: colum;
-        padding: 1rem;
-    }
-}
-
 .conhecimento:nth-child(1){
     grid-column: 4 / 7;
     grid-row: 1 / 3;
@@ -288,6 +280,7 @@ header{
 
 .sessao-conhecimentos{
     background-color: #f5f5f5;
+    height: 100vh;
 }
 
 .sessao-header{
@@ -308,6 +301,7 @@ header{
     display: flex;
     align-items: center;
     color: #4b4b4b;
+    
 }
 
 .conhecimento-header i{
@@ -334,12 +328,6 @@ header{
 .conhecimentos-img-wrapper img{
     object-fit: cover;
     width: 100%;
-}
-
-@media only screen and (max-width: 950px) {
-    .conhecimentos-img-wrapper img {
-        display: none;
-    }
 }
 
 .projetos{
@@ -647,4 +635,15 @@ footer{
 .conteudo{
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
+
+@media (max-width:850px) {
+    .conhecimentos {
+        display: inherit;
+    }
+    .conhecimento-text {
+        margin-bottom: 15px;
+    }          
+}
+
