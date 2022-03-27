@@ -1,27 +1,15 @@
 import './App.css'
-import SayMayName from './components/SayMyName'
-import Pessoa from './components/Pessoa'
-import Frase from './components/Frase'
-import List from './components/List'
+import Evento from './components/Evento'
+import Form from './components/Form'
 
 function App() {
 
-const nome = "Maria"
-
   return (
     <div className="App">   
-      <h1>Testanto CSS</h1>
-      <Frase/>
-      <Frase/>
-      <SayMayName nome="Jonathan"/>
-      <SayMayName nome="João"/>
-      <SayMayName nome={nome}/>
-      <Pessoa
-        nome="Jonathan"
-        idade="29"
-        profissao="Analista de Suporte"
-        foto="https://via.placeholder.com/150"/>
-      <List/>
+      <h1>Testanto Eventos</h1>
+      <Evento numero="1"/>
+      <Evento numero="2"/>
+      <Form />
     </div>
   )
 }
