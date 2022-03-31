@@ -1,4 +1,4 @@
-function OutraLista({ itens}) {   
+function OutraLista({ itens }) {   
 
     return (
         <>
